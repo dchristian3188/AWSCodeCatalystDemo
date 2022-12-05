@@ -11,3 +11,15 @@ Triggers:
 
 # Required - Define action configurations.
 Actions:
+  AWSCDKbootstrap_eb:
+    Identifier: aws/cdk-bootstrap@v1
+    Configuration:
+      Region: us-east-1
+    Environment:
+      Connections:
+        - Role: CodeCatalystPreviewDevelopmentAdministrator-bcmqs1
+          Name: aws-chradavi-dev
+      Name: default_environment
+    Inputs:
+      Sources:
+        - WorkflowSource
