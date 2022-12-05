@@ -4,10 +4,10 @@ SchemaVersion: "1.0"
 # Optional - Set automatic triggers.
 Triggers:
   - Type: PULLREQUEST
-    Branches:
-      - main
     Events:
       - OPEN
+      - REVISION
+    Branches: []
 
 # Required - Define action configurations.
 Actions:
